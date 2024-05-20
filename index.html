@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="/sweetAlert/dist/sweetalert2.all.min.js"></script>
+    <title>Bookmarks manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <h2>Bookmarks manager</h2>
+
+            <input type="text" class="web-name" placeholder="Website name">
+            <input type="url" class="web-url" placeholder="Website url">
+
+            <div class="category-list">
+                <small>Choose from category list or add a new one</small>
+
+                <div class="suggestions"></div>
+            </div>
+
+            <input type="text" class="category" placeholder="Add a new category or put suggest one">
+
+            <button class="add-bookmarks" onclick="addBookMarks()">Add bookmarks</button>
+
+            <h2 class="show-all">Show all bookmarks</h2>
+
+            <div class="bookmarks-name">
+                <small>Filter bookmarks by name</small>
+                
+                <div class="buttons"></div>
+            </div>
+    
+            <div class="bookmarks"></div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
