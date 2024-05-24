@@ -53,7 +53,6 @@ function addBookMarks() {
 
     document.querySelector(".buttons").dataset.type ? filterByCategoryName(category) : bookMarksButtons()
     
-
 }
 
 function displayCategories() {
@@ -175,12 +174,11 @@ function deleteBookmark(category, i) {
         document.querySelector(".show-all").classList.remove("colord")
         
         displayCategories()
+        theListAndSuggestion()
         bookMarksButtons()
 
     }
     
-    theListAndSuggestion()
-
 }
 
 function myInformation(myInfo) {
